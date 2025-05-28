@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import First from "./first";
+import First from "./First";
 import Movie from "./Movie";
 
 const router = createBrowserRouter([
