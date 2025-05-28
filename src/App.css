@@ -1,0 +1,494 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+
+.movieWrapper {
+  
+    display: grid;
+    grid-template-columns: 18%;
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    overflow-y: scroll;
+    scroll-snap-type: x mandatory;
+    /* >div{
+        scroll-snap-align: center;
+    } */
+}
+.movieWrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.nameimg{
+    width: 180px;
+    height: 250px;
+    border-radius: 20px;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+.header_mani{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    padding: 7px 0px;
+    position: fixed;
+    top: 0;
+    opacity: 0.5;
+}
+
+.tvsearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+   
+   
+}
+
+
+.logo{
+    width: 170px;
+    height: 60px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+ li,a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+ul:hover{
+    border: red;
+}
+.cursor{
+    font-size: 25px;
+}
+
+.cursor :hover{
+    color: red;
+    cursor: pointer;
+}
+body{
+    background-color: rgb(8, 8, 45);
+    color: white;
+}
+
+.text_center{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 12%;
+}
+
+.text_center h1{
+    font-size: 75px;
+}
+.text_center p{
+    font-size: 24px;
+}
+.hederbaar{
+    position: relative;
+}
+
+.text_center input{
+  border: none;
+    margin-top: 20px;
+    width: 620px;
+    height: 60px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.text_center button{
+    background: linear-gradient(to left, #ff4e50, #f9d423 );
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+.row-buttons {
+    display: inline-flex;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+    gap: 0; /* Ensures buttons are tightly connected */
+}
+
+.row-buttons button {
+  border-radius: 20px;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: transparent;
+    color: black;
+    flex: 1; /* Ensures buttons take equal space */
+    text-align: center;
+}
+
+.row-buttons button.active {
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    color: white;
+}
+
+.row-buttons button:not(.active):hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+.footer-container {
+  margin-top: 10%;
+    background-color: #0a0a1a; /* Dark navy color */
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #facc15; 
+  }
+  
+  .footer-description {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #cccccc;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .facebook_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #ffffff;
+    color: #0a0a1a;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .facebook_icon:hover {
+    background-color:blue; 
+    color: #ffffff;
+  }
+
+  .instagram_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #ffffff;
+    color: #0a0a1a;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .instagram_icon:hover {
+    background-color:rgb(233, 84, 84); 
+    color: #ffffff;
+  }
+
+.Twitter_icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  color: #0a0a1a;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.Twitter_icon:hover {
+  background-color:rgb(130, 206, 232); 
+  color: #ffffff;
+}
+  .linkdi_icon{
+    align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  color: #0a0a1a;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  }
+  .Twitter_icon:hover {
+  background-color:rgb(130, 206, 232); 
+  color: #ffffff;
+}
+
+.linkdin_icon{
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ffffff;
+  color: #0a0a1a;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  padding-top: 7px;
+}
+.linkdin_icon:hover {
+  background-color:blue; 
+  color: #ffffff;
+}
+
+  /* Main container styles */
+.dataToShow {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    padding: 8% 0% 3% 0% ;
+    gap: 80px; 
+    
+    background-color: #10141e;
+    color: #ffffff;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  .dataToShow .left img {
+    width: 250px; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7); 
+  }
+  
+  /* Text container */
+  .dataToShow .right {
+    max-width: 600px; /* Limit the width of the text section */
+  }
+  
+  /* Title styling */
+  .dataToShow .right h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph styling */
+  .dataToShow .right p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #d1d5db; /* Muted text color for readability */
+  }
+  
+  /* Strong text styling */
+  .dataToShow .right p strong {
+    color: #ffffff; /* Highlighted strong text in white */
+  }
+  .youtube_test{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 20px;
+  }
+  
+  
+  .youtube{
+    color: red;
+    font-size: 40px;
+    cursor: pointer;
+
+  }
+
+
+
+
+
+
+  @media (max-width: 570px) and (min-width: 320px) {
+    .header_mani {
+      display: flex; 
+      align-items:center; 
+      gap: 10px;
+      padding: 0px;
+    }
+  
+    .tvsearch {
+      display: flex; 
+      align-items: flex-start;
+      gap: 15px; 
+    }
+  
+    .tvsearch li a {
+      font-size: 16px;
+    }
+  
+    .cursor {
+      align-self: flex-end; 
+      font-size: 20px; 
+    }
+  }
+
+
+
+
+
+  @media (max-width: 570px) and (min-width: 320px) {
+    .text_center h1 {
+      font-size: 40px;
+      margin-top: 100px;
+    }
+  
+    .text_center p {
+      font-size: 15px;
+    }
+  
+    .text_center > div {
+      display: flex; 
+       align-items: center;
+    }
+  
+    .text_center input {
+      width: 100%;
+      border-radius: 20px 0px 0px 20px;
+      height: 50px;
+      font-size: 15px;
+    }
+  
+    .text_center button {
+      width: 40%;
+      border-radius: 0px 20px 20px 0px;
+      height: 50px;
+      margin-top: 20px;
+      font-size: 15px;
+    }
+  }
+  
+
+
+
+
+  @media (max-width: 570px) and (min-width: 320px) {
+    .nameimg {
+      width: 120px; /* Smaller width for images */
+      height: 170px; /* Smaller height for images */
+    }
+  }
+
+
+
+
+  @media (max-width: 570px) and (min-width: 320px) {
+ 
+  .header h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+
+
+ 
+}
+
+
+
+
+
+
+
+@media (max-width: 570px) and (min-width: 320px) {
+  .footer-container {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .footer-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 0.85rem; /* Reduce font size for smaller screens */
+  }
+
+  .footer-description {
+    font-size: 0.8rem; /* Smaller font for description */
+    line-height: 1.4;
+  }
+
+  .footer-social {
+    gap: 1rem; /* Reduce spacing between icons */
+  }
+
+  .footer-social a {
+    width: 2rem; /* Smaller icon size */
+    height: 2rem;
+    font-size: 1rem; /* Reduce icon font size */
+  }
+}
