@@ -401,7 +401,11 @@ body{
 }
 
 
-
+.Search_Result h1{
+font-size: 40px;
+text-align: center;
+padding: 20px;
+}
 
 
 

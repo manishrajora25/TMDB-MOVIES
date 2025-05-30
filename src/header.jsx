@@ -161,7 +161,8 @@ function Header() {
 
       {/* Search Results Section */}
       {searchResults.length > 0 && (
-        <div>
+        <div className="Search_Result">
+           <h1>Search Result</h1>
           <div className="setSearchimg">
             {searchResults.map((movie) => (
               <div key={movie.id} className="onlysearchimg">
