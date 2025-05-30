@@ -97,14 +97,14 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 12%;
+    padding-top: 4%;
 }
 
 .text_center h1{
-    font-size: 75px;
+    font-size: 70px;
 }
 .text_center p{
-    font-size: 24px;
+    font-size: 22px;
 }
 .hederbaar{
     position: relative;
@@ -117,7 +117,7 @@ body{
     height: 60px;
     padding: 10px 20px;
     font-size: 20px;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 30px 0px 0px 30px;
 }
 
 .text_center button{
@@ -125,7 +125,7 @@ body{
     font-size: 20px;
     padding: 15px 30px;
     border: none;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 30px 30px 0px;
     color: white;
     cursor: pointer;
     
@@ -366,6 +366,64 @@ body{
 
   }
 
+.top_cast h1{
+  text-align: center;
+}
+.cast_member{
+  width: 160px;
+  height: 165px;
+  
+}
+.cast_member img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.cast_member p{
+  font-size: 16px;
+  text-align: center;
+}
+.cast_list{
+  height: 250px;
+  display: grid;
+  grid-template-columns: 18%;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+  /* >div{
+      scroll-snap-align: center;
+  } */
+}
+.cast_list::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+
+
+
+.setSearchimg{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+ 
+}
+.onlysearchimg{
+  height: 300px;
+  width: 200px;
+  margin-top: 50px;
+}
+.onlysearchimg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+ 
+}
 
 
 
@@ -436,8 +494,8 @@ body{
 
   @media (max-width: 570px) and (min-width: 320px) {
     .nameimg {
-      width: 120px; /* Smaller width for images */
-      height: 170px; /* Smaller height for images */
+      width: 120px; 
+      height: 170px;
     }
     .content h3{
       font-size: 13px;
