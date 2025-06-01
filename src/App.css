@@ -326,29 +326,29 @@ body{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7); 
   }
   
-  /* Text container */
+  
   .dataToShow .right {
-    max-width: 600px; /* Limit the width of the text section */
+    max-width: 600px; 
   }
   
-  /* Title styling */
+  
   .dataToShow .right h1 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  /* Paragraph styling */
+  
   .dataToShow .right p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 10px;
-    color: #d1d5db; /* Muted text color for readability */
+    color: #d1d5db; 
   }
   
-  /* Strong text styling */
+ 
   .dataToShow .right p strong {
-    color: #ffffff; /* Highlighted strong text in white */
+    color: #ffffff; 
   }
   .youtube_test{
     background-color: white;
@@ -396,9 +396,7 @@ body{
   padding: 1rem;
   overflow-y: scroll;
   scroll-snap-type: x mandatory;
-  /* >div{
-      scroll-snap-align: center;
-  } */
+ 
 }
 .cast_list::-webkit-scrollbar{
   display: none;
@@ -468,7 +466,7 @@ padding: 20px;
   @media (max-width: 570px) and (min-width: 320px) {
     .text_center h1 {
       font-size: 40px;
-      margin-top: 100px;
+    
     }
   
     .text_center p {
