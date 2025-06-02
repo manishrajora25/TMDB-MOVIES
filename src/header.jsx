@@ -103,6 +103,7 @@ function Header() {
 
     fetchMovies();
   }, []);
+  
 
   function trimContentText(content) {
     return content.length > 20 ? content.slice(0, 15) + "..." : content;
@@ -117,7 +118,7 @@ function Header() {
       alert("Please enter a valid search query!");
       return;
     }
-
+    setSearchQuery("");
     try {
       const response = await fetch(`${SEARCH_API}${searchQuery}`);
       const result = await response.json();

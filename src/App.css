@@ -340,9 +340,9 @@ body{
   
   
   .dataToShow .right p {
-    font-size: 1rem;
+    font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #d1d5db; 
   }
   
@@ -432,8 +432,28 @@ padding: 20px;
 }
 
 
+  .click_movie{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10%;
+  }
 
-
+.clicktessimg{
+  width: 210px;
+  height: 300px;
+  margin-top: 30px;
+}
+.clicktessimg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.clicktessimg p{
+  text-align: center;
+}
 
   @media (max-width: 570px) and (min-width: 320px) {
     .header_mani {
