@@ -72,11 +72,14 @@
 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import HeaderSection from "./Mainheader";
 
 function Header() {
   const [movieData, setMovieData] = useState([]);
   const [randomMovie, setRandomMovie] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [searchIcons, setSearchIcons] = useState("");
+
   const [searchResults, setSearchResults] = useState([]);
 
   const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
@@ -118,11 +121,12 @@ function Header() {
       alert("Please enter a valid search query!");
       return;
     }
-    setSearchQuery("");
     try {
       const response = await fetch(`${SEARCH_API}${searchQuery}`);
       const result = await response.json();
       setSearchResults(result.results || []);
+    setSearchQuery("");
+
     } catch (error) {
       console.error("Error searching for movies:", error);
     }
@@ -159,6 +163,8 @@ function Header() {
           </div>
         </div>
       </div>
+      <HeaderSection setSearchQuery={setSearchIcons}
+      handleSearch={handleSearch}/>
 
       {/* Search Results Section */}
       {searchResults.length > 0 && (
