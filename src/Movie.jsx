@@ -34,6 +34,13 @@ function Movie() {
       }
 
       const result = await response.json();
+
+      // Find the director from the crew array
+      const director = result.credits?.crew?.find(
+        (person) => person.job === "Director"
+      );
+      result.director = director ? director.name : "Not Available";
+
       setDataToShow(result);
     } catch (err) {
       setError(err.message);
@@ -64,7 +71,8 @@ function Movie() {
     const monthName = date.toLocaleString("default", { month: "long" }); // Get full month name
     const year = date.getFullYear();
     return `${day} ${monthName} ${year}`;
-  } 
+  }
+
   if (error) {
     return <div>Error: {error}</div>;
   }
@@ -83,25 +91,29 @@ function Movie() {
               alt={dataToShow.title || dataToShow.name}
             />
           )}
-         
         </div>
         <div className="right">
           <h1>{dataToShow.title || dataToShow.name}</h1>
           <p>{dataToShow.overview}</p>
+          <hr />
+          <div className="paraflex" style={{display:"flex", alignItems:"center",gap:"40px",margin:"12px 0px"}}>
           <p>
-            <strong>Release Date:</strong>{" "}
+            <strong>Release Date:-</strong>{" "}
             {formatDate(dataToShow.release_date || dataToShow.first_air_date)}
           </p>
           <p>
-            <strong>Rating:</strong> {dataToShow.vote_average}
+            <strong>Rating:-</strong> {dataToShow.vote_average}
           </p>
+          </div> <hr />
+          <p>
+            <strong>Director:-</strong> {dataToShow.director || "Not Available"}
+          </p> <hr />
           <div className="youtube_test">
             <span className="youtube" onClick={fetchMovieTrailer}>
               <FaYoutube />
             </span>
           </div>
         </div>
-        
       </div>
 
       <div className="top_cast">

@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       {/* Header Section */}
-      <Mainheader />
+      {/* <Mainheader /> */}
       <Header />
 
       {/* Rows Section */}
