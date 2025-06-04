@@ -27,7 +27,7 @@ function Footer() {
         <a href="https://www.linkedin.com/feed/" className="linkdin_icon">
           <FaLinkedinIn />
         </a>
-      </div>
+      </div>                      
     </footer>
   );
 }

@@ -35,7 +35,7 @@ function Movie() {
 
       const result = await response.json();
 
-      // Find the director from the crew array
+     
       const director = result.credits?.crew?.find(
         (person) => person.job === "Director"
       );
