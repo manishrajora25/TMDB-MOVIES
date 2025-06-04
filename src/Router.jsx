@@ -3,7 +3,7 @@ import App from "./App";
 import First from "./First";
 import Movie from "./Movie";
 import TvShow from "./TvShow";
-import  Clickmovies  from "./clickmovies";
+import  Clickmovies  from "./Clickmovies";
 import { Clicktvshow } from "./Clicktvshow";
 
 
